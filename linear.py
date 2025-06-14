@@ -10,4 +10,3 @@ def linear(n):
 
 runtimes = measure_runtime_across_range(linear, 1, 10000)
 plot_func_runtimes(runtimes, "LINEAR")
-    
