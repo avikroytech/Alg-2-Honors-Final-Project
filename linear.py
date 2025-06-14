@@ -1,5 +1,5 @@
 from measure import measure_runtime_across_range
-import matplotlib.pyplot as plt
+from mplt import plot_func_runtimes
 
 # A simple linear function
 def linear(n):
@@ -9,17 +9,5 @@ def linear(n):
     return sum
 
 runtimes = measure_runtime_across_range(linear, 1, 10000)
-y_vals = []
-x_vals = []
-
-print("----------- LINEAR RUNTIMES -----------")
-for n, runtime in runtimes:
-    y_vals.append(runtime)
-    x_vals.append(n)
-    print(f"|-- n: {n} --- runtime: {runtime:.10f} --|")
-    
-plt.plot(x_vals, y_vals)
-plt.xlabel("n")
-plt.ylabel("Runtime")
-plt.show()
+plot_func_runtimes(runtimes, "LINEAR")
     
