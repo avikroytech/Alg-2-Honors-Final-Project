@@ -6,5 +6,5 @@ from linear import linear
 from quadratic import quadratic
 from cubic import cubic
 
-runtimes = measure_runtime_across_range(quadratic, 1, 10000)
-plot_func_runtimes(runtimes, "QUADRATIC")
+runtimes = measure_runtime_across_range(cubic, 1, 100)
+plot_func_runtimes(runtimes, "CUBIC")
