@@ -12,5 +12,5 @@ def plot_func_runtimes(runtimes, func_type):
 		
 	plt.plot(x_vals, y_vals)
 	plt.xlabel("n")
-	plt.ylabel("Runtime")
+	plt.ylabel("Runtime (s)")
 	plt.show()
