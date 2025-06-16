@@ -8,7 +8,9 @@ def plot_func_runtimes(runtimes, func_type):
 	for n, runtime in runtimes:
 		y_vals.append(round(runtime, 10))
 		x_vals.append(n)
-		print(f"|-- n: {n} --- runtime: {runtime:.10f} --|")
+		n_range = [1,2,3,99999,100000]
+		if n in n_range:
+			print(f"|-- n: {n} --- runtime: {runtime:.10f} --|")
 		
 	plt.plot(x_vals, y_vals)
 	plt.xlabel("n")
