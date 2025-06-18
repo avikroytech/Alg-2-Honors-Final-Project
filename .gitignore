@@ -1,5 +1,5 @@
-/__pycache__
-/runtime_funcs/__pycache__
-/__pycache__/measure.cpython-311.pyc
+*/__pycache__
+# /runtime_funcs/__pycache__
 *.docx
 *.pptx
+*/*.pyc
