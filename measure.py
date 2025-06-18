@@ -1,4 +1,5 @@
 import time
+import random
 
 # Measure runtime of a function by passing it and n
 def measure_runtime(function, n):
@@ -34,6 +35,22 @@ def measure_search_runtime(function, start, end):
 		input_list = list(range(i))
 		start = time.perf_counter()
 		function(input_list, i-1)
+		end = time.perf_counter()
+
+		runtimes.append((i, end-start))
+
+	return runtimes
+
+# Runs a sort function on an unsorted list and measures runtime
+def measure_sort_runtime(function, start, end):
+	runtimes = []
+
+	for i in range(start, end+1):
+		unsorted_list = list(range(1,i+1))
+		random.shuffle(unsorted_list)
+
+		start = time.perf_counter()
+		function(unsorted_list)
 		end = time.perf_counter()
 
 		runtimes.append((i, end-start))
