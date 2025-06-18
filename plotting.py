@@ -19,5 +19,5 @@ from algorithms.sort.quicksort import quick_sort
 from algorithms.sort.mergesort import merge_sort
 
 # Get a list of runtimes for each val n and plot them
-runtimes = measure_sort_runtime(merge_sort, 1, 1000)
+runtimes = measure_search_runtime(binary_search, 1, 10000)
 plot_func_runtimes(runtimes, "QUICK")

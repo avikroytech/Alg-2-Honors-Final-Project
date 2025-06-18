@@ -1,6 +1,4 @@
 import math
-import time
-import matplotlib.pyplot as plt
 
 def jump_search(arr, target):
     n = len(arr)

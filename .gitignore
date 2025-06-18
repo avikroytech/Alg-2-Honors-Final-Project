@@ -1,5 +1,7 @@
 */__pycache__
-# /runtime_funcs/__pycache__
+/runtime_funcs/__pycache__
+/algorithms/search/__pycache__
+/algorithms/sort/__pycache__
 *.docx
 *.pptx
 */*.pyc

@@ -8,7 +8,7 @@ def plot_func_runtimes(runtimes, func_type):
 	for n, runtime in runtimes:
 		y_vals.append(round(runtime, 10))
 		x_vals.append(n)
-		n_range = [1,2,3,999,1000]
+		n_range = [1,2,3,9999,10000]
 		if n in n_range:
 			print(f"|-- n: {n} --- runtime: {runtime:.10f} --|")
 		

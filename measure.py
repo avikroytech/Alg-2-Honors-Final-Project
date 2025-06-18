@@ -34,7 +34,7 @@ def measure_search_runtime(function, start, end):
 	for i in range(start,end+1):
 		input_list = list(range(i))
 		start = time.perf_counter()
-		function(input_list, i-1)
+		function(input_list, i-1,len(input_list)-1,0)
 		end = time.perf_counter()
 
 		runtimes.append((i, end-start))
